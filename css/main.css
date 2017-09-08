@@ -1,0 +1,632 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* BASIC STYLE SHEET */
+
+body {
+    width: auto;
+    height: 100%;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+    background-color: white;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.2em;
+    color: white;
+    background-color: black; 
+    position: absolute;
+    position: center;
+    display: inline block;
+    padding:18px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+
+}
+
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2em;
+    color: white;
+    background-color: black; 
+    position: absolute;
+    display: block;
+    padding:10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+
+}
+
+h3 {
+    font-family: 'Amatica SC', cursive;
+    font-variant: 700;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+h4 {  font-family: 'Amatica SC', cursive;
+    font-variant: 700;
+    font-size: 20px;
+    line-height: 20px;
+
+}
+
+
+/* START Video + Controls */ 
+
+header {
+    height: 765px;
+    width: auto;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+.row {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+video {
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    background-size: cover;
+    z-index: -1;
+    display: block;
+
+
+}
+
+
+#pause {
+    position: absolute;
+    display: inline-block;
+    text-align: right;
+    background: black;
+    max-height: 20px;
+    max-width: auto;
+    z-index: 10;
+    display: block;
+
+
+}
+
+button {
+    display: inline block;
+    float: right;
+    background-color: black;
+    position: relative;
+    position: fixed;
+    border-style: none;
+    cursor: pointer;
+}
+
+.button:hover { 
+    background-color: #7F7F7F;
+}
+
+/* END Video + Controls */ 
+
+/* START HEADER */ 
+
+
+#behind-logo {
+    display: block;
+    float: center;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#logo-front {
+    position: relative;
+    display: block;
+    float: center;
+    z-index: 5;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+
+}
+
+.foursquare {
+    position: relative;
+    display: block;
+    z-index: 3;
+    background-color: white;
+}
+
+.foursquare1 {
+    display: inline-block;
+    float: left;
+    max-width: 50%;
+    max-height: auto;
+    background-color: white;
+}
+
+.foursquare2 {
+    display: inline-block;
+    float: right;
+    max-width: 50%;
+    max-height: auto;
+    background-color: white;
+}
+
+
+   /* background-color: white; Remember to just javascript this to rollover display none*/ 
+}
+/* END HEADER */ 
+
+/* START INTERACTIVE */
+
+.text {
+    min-width: 100%;
+    min-height: 300px;
+    overflow: contain;
+}
+
+.row.text {
+    display: block;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.big-text {
+    position: relative;
+    display: block;
+    z-index: 5;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.small-text1 {
+    position: relative;
+    display: block;
+    z-index: 5;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.small-text2 {
+    position: relative;
+    display: block;
+    z-index: 5;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+/* DRAG AND DROP */
+
+
+.containerDiv {
+    position: relative;
+    display: inline block;
+    z-index: 5;
+    min-height: auto;
+    min-width: 100%;
+    background-color: white; 
+    float: center;
+    padding:20px;
+}
+
+
+.divClass1 {
+    position: relative;
+    color: white;
+    display: block;
+
+}
+
+.divClass2 {
+    position: relative;
+    color: white;
+    display: block;
+
+}
+
+.draggableDiv {
+    position: relative;
+    display: inline-block;
+    float: center;
+
+}
+
+img.droppableDiv {
+    position: relative;
+    background-color: white;
+    display: inline-block;
+}
+
+.packing {
+    min-width: 100%;
+    min-height: 300px;
+    overflow: contain;
+}
+
+.row.packing {
+    background-color: white;
+    display: block;
+    position: relative;
+}
+
+.highlight {
+    background-image: url(../img/altpack.png);
+}
+
+.highlightstamps {
+    background-image: url(../img/stamps.png);
+}
+
+/*JANUARY*/
+
+#january {
+    margin-top: 20px;
+}
+
+#watch {
+    background-color: black;
+    color: white;
+    border-style: solid 3px grey;
+    margin:30px;
+    font-size: 30px;
+}
+
+#watch:hover {
+    color: white;
+    border-style: solid 2px grey;
+    color: white;
+    cursor: pointer;
+    opacity: 0.5;
+    color: black;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+
+#copyright {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    pointer-events: painted;
+}
+
+
+/*RESPONSIVE*/
+
+* {	box-sizing: border-box;
+}
+
+[class*="col-"] {
+	float: center;
+    width: 100%;
+    height: auto;
+}
+
+.row::after {
+	content:"";
+	clear:both;
+	display: block;
+}
+
+/* For mobile phones: */
+
+@media only screen and (min-width: 160px) {
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+    .pause {
+        max-width: 60%;
+        max-height: auto;
+    }
+
+        #backpack {
+        max-width: 80%;
+        max-height: auto;
+    }
+
+    #draggableDiv {
+        width: 50%;
+        height: auto;
+    }
+
+    .col-m-1 {
+        width: 8.33%;
+    }
+
+    .col-m-2 {
+        width: 16.66%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-4 {
+        width: 33.33%;
+    }
+    .col-m-5 {
+        width: 41.66%;
+    }
+    .col-m-6 {
+        width: 50%;
+
+    }
+    .col-m-7 {
+        width: 58.33%;
+    }
+    .col-m-8 {
+        width: 66.66%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-10 {
+        width: 83.33%;
+    }
+    .col-m-11 {
+        width: 91.66%;
+    }
+    .col-m-12 {
+        width: 100%;
+    }
+}
+
+/* For tablets: */
+@media only screen and (min-width: 768px) {
+       
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .pause {
+        max-width: 80%;
+        max-height: auto;
+    }
+
+        #backpack {
+        max-width: 80%;
+        max-height: auto;
+    }
+
+    #draggableDiv {
+        max-width: 50%;
+        max-height: auto;
+    }
+
+  .col-t-1 {
+        width: 8.33%;
+    }
+    
+    .col-t-2 {
+        width: 16.66%;
+    }
+    .col-t-3 {
+        width: 25%;
+    }
+    .col-t-4 {
+        width: 33.33%;
+
+    }
+    .col-t-5 {
+        width: 41.66%;
+    }
+    .col-t-6 {
+        width: 50%;
+    }
+    .col-t-7 {
+        width: 58.33%;
+    }
+    .col-t-8 {
+        width: 66.66%;
+    }
+    .col-t-9 {
+        width: 75%;
+    }
+    .col-t-10 {
+        width: 83.33%;
+    }
+    .col-t-11 {
+        width: 91.66%;
+    }
+    .col-t-12 {
+        width: 100%;
+
+    }
+
+}
+
+
+/* For desktop: */
+@media only screen and (min-width: 1024px) {
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .pause {
+        max-width: 100%;
+        max-height: auto;
+    }
+
+        #backpack {
+        max-width: 100%;
+        max-height: auto;
+    }
+
+    #draggableDiv {
+        max-width: 100%;
+        max-height: auto;
+    }
+
+ .col-dk-1 {
+        width: 8.33%;
+
+    }
+
+    .col-dk-2 {
+        width: 16.66%;
+
+    }
+
+    .col-dk-3 {
+        width: 25%;
+    }
+
+    .col-dk-4 {
+        width: 33.33%;
+
+    }
+
+    .col-dk-5 {
+        width: 41.66%;
+    }
+
+    .col-dk-6 {
+        width: 50%;
+    }
+
+    .col-dk-7 {
+        width: 58.33%;
+    }
+
+    .col-dk-8 {
+        width: 66.66%;
+    }
+
+    .col-dk-9 {
+        width: 75%;
+    }
+
+    .col-dk-10 {
+        width: 83.33%;
+    }
+
+    .col-dk-11 {
+        width: 91.66%;
+    }
+
+    .col-dk-12 {
+        width: 100%;
+    }
+
+}
